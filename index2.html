@@ -7,35 +7,33 @@
     <title>Registration form</title>
     
 </head>
-<body>
+<body style="background-color: beige">
     <header>
-            <h1>Registration form</h1>
+            <h1 style="background-color:peachpuff">Registration form</h1>
     </header>
-
-    <h5><i>Note that all the fields are required to be filled!!</i></h5>
 
     <form action="/action_page.php" method="POST">
         
         <div>
             Name:<br>
-            <input type="name" placeholder="First Name">
-            <input type="name" placeholder="Last Name">
+            <input type="name" placeholder="First Name" required>
+            <input type="name" placeholder="Last Name" required>
         </div>
         <br>
         <div>
             Date of birth:<br>
-            <input type="date" name="bday">
+            <input type="date" name="bday" min="1988-01-01" max="2005-01-01" required>
             <!-- <input type="date" name="bday" min="2000-01-01"> -->
         </div>
         <br>
         <div>
             Email:<br>
-            <input type="email" placeholder="abc@abc.com">
+            <input type="email" placeholder="abc@abc.com" aria-required="true">
         </div>
         <br>
         <div>
             Phone no.:<br>
-            <input type="number" placeholder="Phone number">
+            <input type="number" placeholder="Phone number" required>
         </div>
         <br>
         <div>
@@ -58,6 +56,8 @@
         <div>
             <input type="button" onclick="alert('You have been registered for the next session!!!')" value="Register">
         </div>
+
+        <p style="color:orangered"><i>*Note that all the fields are required to be filled!!</i></p>
 
     </form>
 </body>
