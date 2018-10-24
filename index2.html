@@ -24,11 +24,18 @@
         <br>
         <div>
             Date of birth:<br>
-            <input type="number" placeholder="Age">
+            <input type="date" name="bday">
+            <!-- <input type="date" name="bday" min="2000-01-01"> -->
         </div>
         <br>
         <div>
-
+            Email:<br>
+            <input type="email" placeholder="abc@abc.com">
+        </div>
+        <br>
+        <div>
+            Phone no.:<br>
+            <input type="number" placeholder="Phone number">
         </div>
         <br>
         <div>
@@ -36,6 +43,20 @@
             <input type="radio" name="gender" value="Male">Male<br>
             <input type="radio" name="gender" value="Female">Female<br>
             <input type="radio" name="gender" value="Other">Other
+        </div>
+        <br>
+        <div>
+            Select course:<br>
+            <select>
+                <option value="Continental">Continental</option>
+                <option value="Itaian">Italian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Korean">Korean</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="button" onclick="alert('You have been registered for the next session!!!')" value="Register">
         </div>
 
     </form>
