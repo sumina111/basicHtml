@@ -4,48 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style2.css">
     <title>Registration form</title>
     
 </head>
-<body style="background-color: beige">
-    <fieldset>
-    <header>
-            <h1 style="background-color:peachpuff">Registration form</h1>
-    </header>
 
-    <form action="/action_page.php" method="POST">
+<body>
+    <div class="page2">
+    <h1>Registration form</h1>
+    <form action="/action_page.php" method="POST" class="border2">
         
-        <div>
-            Name:<br>
+        <div class="mp">
             <input type="name" placeholder="First Name" required>
+        </div>
+        
+        <div class="mp">
             <input type="name" placeholder="Last Name" required>
         </div>
-        <br>
-        <div>
-            Date of birth:<br>
+        
+        <div class="mp">
+            Date of birth:
             <input type="date" name="bday" min="1988-01-01" max="2005-01-01" required>
-            <!-- <input type="date" name="bday" min="2000-01-01"> -->
         </div>
-        <br>
-        <div>
-            Email:<br>
+        
+        <div class="mp">
             <input type="email" placeholder="abc@abc.com" aria-required="true">
         </div>
-        <br>
-        <div>
-            Phone no.:<br>
+       
+        <div class="mp">
+            Phone no.:
             <input type="number" placeholder="Phone number" required>
         </div>
-        <br>
-        <div>
-            Gender:<br>
-            <input type="radio" name="gender" value="Male">Male<br>
-            <input type="radio" name="gender" value="Female">Female<br>
+        
+        <div class="mp">
+            Gender:
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
             <input type="radio" name="gender" value="Other">Other
         </div>
-        <br>
-        <div>
-            Select course:<br>
+       
+        <div class="mp">
+            Select course:
             <select>
                 <option value="Continental">Continental</option>
                 <option value="Itaian">Italian</option>
@@ -53,15 +52,14 @@
                 <option value="Korean">Korean</option>
             </select>
         </div>
-        <br>
-        <div>
+        
+        <div class="mp">
             <input type="button" onclick="alert('You have been registered for the next session!!!')" value="Register">
         </div>
 
         <p style="color:orangered"><i>*Note that all the fields are required to be filled!!</i></p>
 
     </form>
-    </fieldset>
-    
+</div>
 </body>
 </html>
