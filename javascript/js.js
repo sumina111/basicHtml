@@ -82,12 +82,37 @@ const maxCharacter = (str) => {
 function chunkArray(array,chsize)
 {
     array = array.slice(0);
+    console.log(array);
     let temp = [];
     while(array.length>0)
     {    
         temp.push(array.splice(0, chsize));
     }
     return temp;
+}
+
+function fizzbuzz(){
+    for(let i=1; i<=100; i++)
+    {
+    
+    // if(i===3 && i%3===0)
+    // {
+    //     i = "fizz";
+    // }
+    // else if(i===5 && i%5===0)
+    // {
+    //     i = "buzz";
+    // }
+         
+    
+    }
+}
+
+
+const numToArray = (num) => {
+    let n =num.toString();
+    let newone = n.split("");
+    return newone;
 }
 
 
@@ -97,4 +122,5 @@ console.log(reverseInt(513));
 console.log(capitalLetters("donot RepeaT yourself"));
 console.log(maxCharacter('javascript'));
 console.log(chunkArray([1,2,3,4,5,6,7],3));
-
+// console.log(fizzbuzz());
+console.log(numToArray(123));
