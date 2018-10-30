@@ -118,6 +118,28 @@ const numToArray = (num) => {
 }
 
 
+const powerSet = (array) => {
+    let power = [];
+    let total = Math.pow(2,array.length);
+    for(let i=0; i<total; i++)
+    {
+        let temp = [];
+        let num = i.toString(2);
+        while(num.length < array.length)
+        {
+            num = '0' + num;        }
+        for (var b = 0; b < num.length; b++) 
+        {
+            if (num[b] === '1') 
+            { 
+                temp.push(array[b]);             }    
+        }
+        power.push(temp);
+    }
+    return power;
+}
+
+
 console.log(stringReversal('hello'));
 console.log(palindrome('racecar'));
 console.log(reverseInt(513));
@@ -126,3 +148,4 @@ console.log(maxCharacter('javascript'));
 console.log(chunkArray([1,2,3,4,5,6,7],3));
 console.log(fizzbuzz());
 console.log(numToArray(123));
+console.log(powerSet([1,2]));
