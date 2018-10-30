@@ -118,11 +118,11 @@ const numToArray = (num) => {
 }
 
 
-// console.log(stringReversal('hello'));
-// console.log(palindrome('racecar'));
-// console.log(reverseInt(513));
-// console.log(capitalLetters("donot RepeaT yourself"));
-// console.log(maxCharacter('javascript'));
-// console.log(chunkArray([1,2,3,4,5,6,7],3));
+console.log(stringReversal('hello'));
+console.log(palindrome('racecar'));
+console.log(reverseInt(513));
+console.log(capitalLetters("donot RepeaT yourself"));
+console.log(maxCharacter('javascript'));
+console.log(chunkArray([1,2,3,4,5,6,7],3));
 console.log(fizzbuzz());
-// console.log(numToArray(123));
+console.log(numToArray(123));
