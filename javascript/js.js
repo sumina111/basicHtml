@@ -95,15 +95,17 @@ function fizzbuzz(){
     for(let i=1; i<=100; i++)
     {
     
-    // if(i===3 && i%3===0)
-    // {
-    //     i = "fizz";
-    // }
-    // else if(i===5 && i%5===0)
-    // {
-    //     i = "buzz";
-    // }
-         
+    if(i%3==0)
+    {
+        console.log("fizz");
+    }
+    else if( i%5==0)
+    {
+        console.log('buzz');
+    }
+    else{
+        console.log(i);
+    }
     
     }
 }
@@ -116,11 +118,11 @@ const numToArray = (num) => {
 }
 
 
-console.log(stringReversal('hello'));
-console.log(palindrome('racecar'));
-console.log(reverseInt(513));
-console.log(capitalLetters("donot RepeaT yourself"));
-console.log(maxCharacter('javascript'));
-console.log(chunkArray([1,2,3,4,5,6,7],3));
-// console.log(fizzbuzz());
-console.log(numToArray(123));
+// console.log(stringReversal('hello'));
+// console.log(palindrome('racecar'));
+// console.log(reverseInt(513));
+// console.log(capitalLetters("donot RepeaT yourself"));
+// console.log(maxCharacter('javascript'));
+// console.log(chunkArray([1,2,3,4,5,6,7],3));
+console.log(fizzbuzz());
+// console.log(numToArray(123));
