@@ -45,9 +45,7 @@ let word = "";
 function capitalLetters(sen)
 {
     word = sen.toLowerCase();
-    console.log("1 ",word);
     let splitString = word.split(" ");
-    console.log("2 ", splitString);
     for(let i=0; i<splitString.length; i++)
     {
         splitString[i]=splitString[i].charAt(0).toUpperCase()+ splitString[i].slice(1);
@@ -61,6 +59,5 @@ function capitalLetters(sen)
 console.log(stringReversal('hello'));
 console.log(palindrome('racecar'));
 // console.log(reverseInt(513));
-// console.log(word);
 console.log(capitalLetters("donot RepeaT yourself"));
 
