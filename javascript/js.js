@@ -51,8 +51,43 @@ function capitalLetters(sen)
     {
         splitString[i]=splitString[i].charAt(0).toUpperCase()+ splitString[i].slice(1);
     }
-
     return splitString.join(" ");
+}
+
+
+const maxCharacter = (str) => {
+    let charec=[], maxNum=0, maxChar="";
+    str.split('').forEach(char => {
+        if (charec[char]) 
+        {
+            charec[char]++; 
+        } 
+        else 
+        { 
+            charec[char] = 1;
+        }
+        for(let char in charec)
+        {
+            if(charec[char]>maxNum)
+            {
+                maxNum = charec[char];
+                maxChar = char;
+            }
+        }
+    });
+    return maxChar;
+}
+
+
+function chunkArray(array,chsize)
+{
+    array = array.slice(0);
+    let temp = [];
+    while(array.length>0)
+    {    
+        temp.push(array.splice(0, chsize));
+    }
+    return temp;
 }
 
 
@@ -60,4 +95,6 @@ console.log(stringReversal('hello'));
 console.log(palindrome('racecar'));
 console.log(reverseInt(513));
 console.log(capitalLetters("donot RepeaT yourself"));
+console.log(maxCharacter('javascript'));
+console.log(chunkArray([1,2,3,4,5,6,7],3));
 
